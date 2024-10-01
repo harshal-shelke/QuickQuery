@@ -16,6 +16,25 @@
     color: #e0e0e0; /* Light text color */
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); /* Import a cool font from Google Fonts */
+
+.main .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the heading */
+    font-size: 36px; /* Make the text large */
+    font-family: 'Poppins', sans-serif; /* Use the Poppins font */
+    font-weight: 600; /* Make the font bold */
+    padding: 20px;
+    color: transparent; /* We make the text color transparent to use a gradient */
+    background: linear-gradient(90deg, rgba(72,189,169,1) 0%, rgba(239,187,6,1) 50%, rgba(255,0,128,1) 100%); /* Cool gradient effect */
+    background-clip: text; /* Apply gradient to text */
+    -webkit-background-clip: text; /* Safari compatibility */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Add some shadow effect for depth */
+}
+
+
+
 .main-container {
     max-width: 900px;
     margin: auto;
@@ -45,40 +64,6 @@
     padding: 0px 20px;
 }
 
-.main-bottom {
-    position: relative; /* Change to relative to avoid absolute positioning issues */
-    width: 100%; 
-    max-width: 900px;
-    padding: 0px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    margin-top: 20px; /* Add space between result and search box */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.search-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    background-color: #1f1f1f; /* Darker background for input area */
-    padding: 10px 20px;
-    border-radius: 50px;
-    width: 100%; /* Make the search box take up full width */
-    max-width: 600px; /* Limit maximum width to keep it centered */
-    margin: 0 auto; /* Horizontally center the search box */
-}
-
-.bottom-info {
-    text-align: center;
-    margin-top: 10px;
-    color: #b0b0b0; /* Style the text below the search box */
-    font-size: 13px;
-    font-weight: 300;
-}
-
 
 
 .search-box {
@@ -93,13 +78,13 @@
 }
 
 .search-box img {
-    width: 24px;
+    width: 32px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
 
 .search-box img:hover {
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 
 .search-box input {
@@ -135,16 +120,16 @@
 }
 
 .result {
-    padding: 20px; /* Add padding inside the container */
-    max-height: 70vh;
+    padding: 10px; /* Add padding inside the container */
+    max-height: 50vh;
     overflow-y: scroll;
     background-color: #1e1e1e; /* Dark background for result area */
     border-radius: 8px; /* Optional: Add rounded corners */
     border: 1px solid #333; /* Solid border around the result */
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for a container-like effect */
-    margin: 20px auto; /* Add margin to create space between the result and other elements */
+    margin: 18px auto; /* Add margin to create space between the result and other elements */
     width: calc(100% - 40px); /* Ensure it takes full width with padding */
-    max-width: 800px; /* Set a max-width to avoid stretching too much on large screens */
+    max-width: 5000px; /* Set a max-width to avoid stretching too much on large screens */
 }
 
 @media (max-width: 768px) {
@@ -159,13 +144,14 @@
 }
 
 .result-title {
-    margin: 40px 0px;
+    margin: 10px 1px;
     display: flex;
     align-items: center;
     gap: 20px;
     font-size: 20px;
     font-weight: 300;
     font-style: italic;
+    color: rgb(255, 255, 255);
 }
 
 .result-data {
@@ -204,7 +190,7 @@
     font-size: 19px;
     font-weight: 390;
     line-height: 1.3;
-    color: #e0e0e0; /* Light text color */
+    color: #769feb; /* Light text color */
 }
 
 @media (max-width: 768px) {
