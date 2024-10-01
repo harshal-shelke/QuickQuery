@@ -45,6 +45,42 @@
     padding: 0px 20px;
 }
 
+.main-bottom {
+    position: relative; /* Change to relative to avoid absolute positioning issues */
+    width: 100%; 
+    max-width: 900px;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    margin-top: 20px; /* Add space between result and search box */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #1f1f1f; /* Darker background for input area */
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: 100%; /* Make the search box take up full width */
+    max-width: 600px; /* Limit maximum width to keep it centered */
+    margin: 0 auto; /* Horizontally center the search box */
+}
+
+.bottom-info {
+    text-align: center;
+    margin-top: 10px;
+    color: #b0b0b0; /* Style the text below the search box */
+    font-size: 13px;
+    font-weight: 300;
+}
+
+
+
 .search-box {
     display: flex;
     align-items: center;
@@ -96,6 +132,26 @@
     overflow-y: scroll;
     background-color: #1e1e1e; /* Dark background for result area */
     border-radius: 8px; /* Optional: Add some rounding */
+}
+
+.result {
+    padding: 20px; /* Add padding inside the container */
+    max-height: 70vh;
+    overflow-y: scroll;
+    background-color: #1e1e1e; /* Dark background for result area */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    border: 1px solid #333; /* Solid border around the result */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for a container-like effect */
+    margin: 20px auto; /* Add margin to create space between the result and other elements */
+    width: calc(100% - 40px); /* Ensure it takes full width with padding */
+    max-width: 800px; /* Set a max-width to avoid stretching too much on large screens */
+}
+
+@media (max-width: 768px) {
+    .result {
+        width: calc(100% - 20px); /* Adjust width for mobile */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
 }
 
 .result::-webkit-scrollbar {
@@ -150,3 +206,26 @@
     line-height: 1.3;
     color: #e0e0e0; /* Light text color */
 }
+
+@media (max-width: 768px) {
+    .greet {
+        font-size: 22px; /* Reduce greeting font size */
+        padding: 10px 0; /* Adjust padding for better alignment */
+    }
+  
+    .search-box input {
+        font-size: 14px; /* Adjust font size for mobile */
+        padding: 8px; /* Reduce padding to fit screen */
+        width: 100%; /* Ensure it fills the width */
+    }
+  
+    .search-box img {
+        width: 18px; /* Adjust icon size */
+    }
+  
+    /* Align input field and text better */
+    .main-bottom {
+        padding: 0 10px; /* Adjust padding */
+    }
+  }
+  

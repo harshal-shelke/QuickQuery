@@ -58,21 +58,22 @@ const Main = () => {
             }
 
             <div className="main-bottom">
-                <div className="search-box">
-                    <input 
-                        onChange={(e) => setinput(e.target.value)}  
-                        value={input} 
-                        placeholder='Enter your Query here' 
-                        onKeyPress={handleKeyPress} // Listening for Enter key
-                    />
-                    <div className="">
-                        <img onClick={() => onSent()} src={assets.send_icon} />
-                    </div>  
-                </div>
-                <p className='bottom-info'>
-                    Created by - Harshal Shelke 
-                </p>
-            </div>
+    <div className="search-box">
+        <input 
+            onChange={(e) => setinput(e.target.value)}  
+            value={input} 
+            placeholder='Enter your Query here' 
+            onKeyPress={handleKeyPress} // Listening for Enter key
+        />
+        <div>
+            <img onClick={() => onSent()} src={assets.send_icon} />
+        </div>  
+    </div>
+    <p className="bottom-info">
+        Created by - Harshal Shelke
+    </p>
+</div>
+           
         </div>
     );
 }

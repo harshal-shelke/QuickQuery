@@ -4,8 +4,21 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: #1a1a1a; /* Dark background color */
-    padding: 25px 15px;
+    padding: 20px 10px;
     color: #ffffff; /* Light text color */
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1a1a1a; /* Dark background color */
+    padding: 20px 10px;
+    color: #ffffff; /* Light text color */
+    }
+   
 }
 
 .sidebar img {
@@ -74,3 +87,4 @@
 .sidebar .recent::-webkit-scrollbar {
     display: none; /* Safari and Chrome */
 }
+

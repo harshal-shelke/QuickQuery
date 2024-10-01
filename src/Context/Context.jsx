@@ -16,7 +16,7 @@ const ContextProvider = (props) => {
   const delayPara = (index, nextWord) => {
     setTimeout(function () {
       setresultData((prev) => prev + nextWord);
-    }, 75 * index);
+    }, 7 * index);
   };
 
 
