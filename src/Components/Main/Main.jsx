@@ -24,7 +24,7 @@ const Main = () => {
     return (
         <div className='main'>
             <div className="nav">
-                <p>QuickQuery - by Harshal</p>
+                <p>QuickQuery</p>
             </div>
 
             {!showResult
